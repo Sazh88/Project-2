@@ -16,7 +16,11 @@ router.get('/', (req, res) => {
       },
     ]
   })
-    .then(dbProductData => res.json(dbProductData))
+    .then(data => {
+      // console.log('zz', data.dataValues)
+      const dbProductData = data.get({ plain: true })
+      res.render('homepage', { dbProductData })
+    })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);

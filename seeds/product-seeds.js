@@ -1,124 +1,4 @@
 const { Product } = require('../models');
-const mensPantSize = [
-  "28W x 28L",
-"28W x 30L",
-"28W x 32L",
-"29W x 28L",
-"29W x 29L",
-"29W x 30L",
-"29W x 32L",
-"29W x 34L",
-"30W x 28L",
-"30W x 29L",
-"30W x 30L",
-"30W x 32L",
-"30W x 34L",
-"31W x 28L",
-"31W x 29L",
-"31W x 30L",
-"31W x 32L",
-"31W x 34L",
-"32W x 28L",
-"32W x 29L",
-"32W x 30L",
-"32W x 31L",
-"32W x 32L",
-"32W x 33L",
-"32W x 34L",
-"33W x 28L",
-"33W x 29L",
-"33W x 30L",
-"33W x 32L",
-"33W x 34L",
-"34W x 28L",
-"34W x 29L",
-"34W x 30L",
-"34W x 31L",
-"34W x 32L",
-"34W x 33L",
-"34W x 34L",
-"35W x 28L",
-"35W x 29L",
-"35W x 30L",
-"35W x 32L",
-"35W x 34L",
-"36W x 28L",
-"36W x 29L",
-"36W x 30L",
-"36W x 31L",
-"36W x 32L",
-"36W x 33L",
-"36W x 34L",
-"38W x 28L",
-"38W x 29L",
-"38W x 30L",
-"38W x 32L",
-"38W x 34L",
-"40W x 28L",
-"40W x 29L",
-"40W x 30L",
-"40W x 32L",
-"40W x 34L",
-"42W x 28L",
-"42W x 29L",
-"42W x 30L",
-"42W x 32L",
-"42W x 34L"
-];
-const womensPantSize = [
-  "24 Short",
-"24 Regular",
-"24 Long",
-"24W x 32L",
-"25 Short",
-"25 Regular",
-"25 Long",
-"25W x 32L",
-"26 Short",
-"26 Regular",
-"26 Long",
-"26W x 30L",
-"27 Short",
-"27 Regular",
-"27 Long",
-"28 Short",
-"28 Regular",
-"28 Long",
-"29 Short",
-"29 Regular",
-"29 Long",
-"29W x 28L",
-"29W x 30L",
-"30 Short",
-"30 Regular",
-"30 Long",
-"31 Short",
-"31 Regular",
-"31 Long",
-"32 Short",
-"32 Regular",
-"32 Long",
-"33 Short",
-"33 Regular",
-"33 Long",
-"34 Short",
-"34 Regular",
-"34 Long",
-"34W x 30L",
-"36 Short",
-"36 Regular",
-"38 Short",
-"38 Regular",
-"40 Short",
-"40 Regular",
-"42 Short",
-"42 Regular",
-"44 Short",
-"44 Regular",
-"46 Short",
-"46 Regular",
-
-];
 
 const productData = [
 
@@ -128,7 +8,7 @@ const productData = [
     price: 0.01,
     stock: 14,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'XL',
     filename: "01-Men's 2-Pack Regular-Fit Short-Sleeve Crewneck Pocket T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -138,7 +18,7 @@ const productData = [
     price: 22.00,
     stock: 6,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Men's Crew T-Shirts, Multipack.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -148,7 +28,7 @@ const productData = [
     price: 17.95,
     stock: 17,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Men's Heavy Cotton T-Shirt, Style G5000, 2-Pack.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -158,7 +38,7 @@ const productData = [
     price: 12.44,
     stock: 4,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Men's Short Sleeve Pocket T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -168,7 +48,7 @@ const productData = [
     price: 27.88,
     stock: 8,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Men's Crew T-Shirts, Multipack.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -178,7 +58,7 @@ const productData = [
     price: 18.40,
     stock: 6,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-4 Pack Men's Dry-Fit Moisture Wicking Performance Long Sleeve T-Shirt, UV Sun Protection Outdoor Active Athletic Crew Top.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -188,7 +68,7 @@ const productData = [
     price: 15.99,
     stock: 4,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Men's 2-Pack Regular-Fit Short-Sleeve Crewneck Pocket T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -198,7 +78,7 @@ const productData = [
     price: 13.95,
     stock: 6,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Men's Classic Jersey T-shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -208,7 +88,7 @@ const productData = [
     price: 11.95,
     stock: 6,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Men's Dry Tee.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -218,7 +98,7 @@ const productData = [
     price: 9.95,
     stock: 19,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Men’s Thistletown Park Raglan Tee.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -228,7 +108,7 @@ const productData = [
     price: 17.88,
     stock: 4,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Men's Crew Neck T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -238,7 +118,7 @@ const productData = [
     price: 15.75,
     stock: 5,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Sport Men's Heathered Performance T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -248,7 +128,7 @@ const productData = [
     price: 17.89,
     stock: 28,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Men's Venice Burnout Notch Neck Tee Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -258,7 +138,7 @@ const productData = [
     price: 14.77,
     stock: 15,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Men's DryBlend Classic T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -268,7 +148,7 @@ const productData = [
     price: 7.99,
     stock: 9,
     category_id: 1,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Men's Thistletown Park Crew.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -278,7 +158,7 @@ const productData = [
     price: 18.00,
     stock: 12,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "16-Men's Sportstyle Logo Short Sleeve T-Shirt.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -288,7 +168,7 @@ const productData = [
     price: 11.99,
     stock: 14,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "17-Men's Heavy Cotton Adult Tee.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -298,7 +178,7 @@ const productData = [
     price: 17.99,
     stock: 16,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "18-Men's Crew T-Shirts, Multipack.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -308,7 +188,7 @@ const productData = [
     price: 14.59,
     stock: 2,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "19-Men's Tagless Cotton Crew Neck Undershirts, Available in Multiple Packs.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -318,7 +198,7 @@ const productData = [
     price: 20.99,
     stock: 6,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "20-Men's Crew T-Shirts.jpg",
     parentFolder: "M-Tops & T-Shirts",
     gender: "M"
@@ -330,7 +210,7 @@ const productData = [
   //   price: 24.99,
   //   stock: 14,
   //   category_id: 2,
-  //   size: ["S", "M", "L", "XL", "XXL"],
+  //   size: 'M',
   //   filename: "",
   //   gender: "M"
   // },
@@ -341,7 +221,7 @@ const productData = [
     price: 24.99,
     stock: 14,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-Men's EcoSmart Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -351,7 +231,7 @@ const productData = [
     price: 20.99,
     stock: 8,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Men's Pullover EcoSmart Hooded Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -361,7 +241,7 @@ const productData = [
     price: 29.99,
     stock: 10,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Men's Comfortwash Garment Dyed Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -371,7 +251,7 @@ const productData = [
     price: 33.99,
     stock: 4,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Mens Novelty Color Block Hoodies Cozy Sport Outwear.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -381,7 +261,7 @@ const productData = [
     price: 44.99,
     stock: 22,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Men’s Ultimate Cotton Heavyweight Pullover Hoodie Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -391,7 +271,7 @@ const productData = [
     price: 22.59,
     stock: 19,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Men's Authentic Originals Sueded Pullover Hoodie.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -401,7 +281,7 @@ const productData = [
     price: 29.79,
     stock: 21,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Men's Long Sleeve T-Shirt Hoodie, Script Logo.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -411,7 +291,7 @@ const productData = [
     price: 39.99,
     stock: 4,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Men's Comfortwash Garment Dyed Hoodie Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -421,7 +301,7 @@ const productData = [
     price: 26.56,
     stock: 6,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Men's Force Relaxed Fit Midweight Quarter-Zip Mock-Neck Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -431,7 +311,7 @@ const productData = [
     price: 40.99,
     stock: 1,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Men's Powerblend Fleece Hoodie, C Logo.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -441,7 +321,7 @@ const productData = [
     price: 37.99,
     stock: 9,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Hoodie, Big and Tall Hoodies for Men, Mens Hoodies, Zip Up Hoodie.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -451,7 +331,7 @@ const productData = [
     price: 24.99,
     stock: 25,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Men's Pullover Fleece Hoodie.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -461,7 +341,7 @@ const productData = [
     price: 28.75,
     stock: 11,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Men's Midweight Hooded Sweatshirt.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -471,7 +351,7 @@ const productData = [
     price: 24.99,
     stock: 14,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Men's Authentic Originals Sueded Pullover Hoodie.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -481,7 +361,7 @@ const productData = [
     price: 28.99,
     stock: 17,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Men's Eversoft Fleece Sweatshirts & Hoodies.jpg",
     parentFolder: "M-Sweatshirts & Hoodies",
     gender: "M"
@@ -493,7 +373,7 @@ const productData = [
     price: 10.99,
     stock: 14,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-5 PackMen's Dry-Fit Sweat Resistant Active Athletic Performance Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -503,7 +383,7 @@ const productData = [
     price: 8.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Men's Raid 2.0 Workout Gym Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -513,7 +393,7 @@ const productData = [
     price: 15.99,
     stock: 22,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Men’s Linen Shorts Casual Drawstring Summer Beach Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -523,7 +403,7 @@ const productData = [
     price: 19.99,
     stock: 12,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Men's Perfect Classic Fit 8 Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -533,7 +413,7 @@ const productData = [
     price: 16.99,
     stock: 7,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Flex Men's Woven Training Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -543,7 +423,7 @@ const productData = [
     price: 12.50,
     stock: 19,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Men's Dry Training Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -553,7 +433,7 @@ const productData = [
     price: 22.00,
     stock: 3,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Men's Mini Ripstop Cargo Short.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -563,7 +443,7 @@ const productData = [
     price: 16.99,
     stock: 16,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-mens Linen Casual Classic Fit Short.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -573,7 +453,7 @@ const productData = [
     price: 20.99,
     stock: 5,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Men's Workout Stretch Shorts Drawstring Elastic Zipper Pockets.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -583,7 +463,7 @@ const productData = [
     price: 18.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Men's Clima Tech Short.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -593,7 +473,7 @@ const productData = [
     price: 16.99,
     stock: 7,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Men's Rival Fleece Big Logo Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -603,7 +483,7 @@ const productData = [
     price: 13.55,
     stock: 0,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Men's Condivo 20 Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -613,7 +493,7 @@ const productData = [
     price: 17.99,
     stock: 13,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Golf Men's Ultimate 365 Short.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -623,7 +503,7 @@ const productData = [
     price: 15.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Men's Slim Jean Shorts.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -633,7 +513,7 @@ const productData = [
     price: 19.99,
     stock: 16,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-mens Canvas Utility Hiker Short.jpg",
     parentFolder: "M-Shorts",
     gender: "M"
@@ -645,7 +525,7 @@ const productData = [
     price: 44.99,
     stock: 14,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-Men's Full-Zip Polar Fleece Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -655,7 +535,7 @@ const productData = [
     price: 34.99,
     stock: 1,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Men's Long Sleeve Quilted Lined Flannel Shirt Jacket with Hood.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -665,7 +545,7 @@ const productData = [
     price: 43.59,
     stock: 12,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Men's Lightweight Water-Resistant Packable Puffer Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -675,7 +555,7 @@ const productData = [
     price: 40.79,
     stock: 17,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Men's Lightweight Water-Resistant Packable Puffer Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -685,7 +565,7 @@ const productData = [
     price: 38.99,
     stock: 18,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Men's Highland Washed Hooded Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -695,7 +575,7 @@ const productData = [
     price: 29.99,
     stock: 13,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Men's Packable Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -705,7 +585,7 @@ const productData = [
     price: 37.59,
     stock: 6,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Men's Insulated Eisenhower Front-Zip Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -715,7 +595,7 @@ const productData = [
     price: 49.99,
     stock: 10,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Men’s Thermoball Eco Insulated Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -725,7 +605,7 @@ const productData = [
     price: 49.39,
     stock: 15,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Men's Tempo Softshell Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -735,7 +615,7 @@ const productData = [
     price: 30.00,
     stock: 17,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Men's Steens Mountain Printed Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -745,7 +625,7 @@ const productData = [
     price: 34.99,
     stock: 12,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Men's Mt. Washington Insulated Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -755,7 +635,7 @@ const productData = [
     price: 74.99,
     stock: 11,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Men's Full Swing Loose Fit Washed Duck Fleece-Lined Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -765,7 +645,7 @@ const productData = [
     price: 46.99,
     stock: 13,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Men's Full Swing Relaxed Fit Ripstop Insulated Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -775,7 +655,7 @@ const productData = [
     price: 28.99,
     stock: 10,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Men's Soft Fleece Full Zip Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -785,7 +665,7 @@ const productData = [
     price: 36.99,
     stock: 19,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Men's Hooded Polar Fleece Jacket.jpg",
     parentFolder: "M-Jackets & Vests",
     gender: "M"
@@ -797,7 +677,7 @@ const productData = [
     price: 44.99,
     stock: 14,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "01-Men's Athletic-fit Casual Stretch Khaki Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -807,7 +687,7 @@ const productData = [
     price: 24.99,
     stock: 8,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "02-Men's Performance Series Extreme Motion Straight Fit Tapered Leg Jean.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -817,7 +697,7 @@ const productData = [
     price: 19.95,
     stock: 3,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "03-Men's Original 874 Work Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -827,7 +707,7 @@ const productData = [
     price: 28.99,
     stock: 7,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "04-Men's Performance Series Extreme Motion Straight Fit Tapered Leg Jean.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -837,7 +717,7 @@ const productData = [
     price: 34.55,
     stock: 9,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "05-Men's EcoSmart Open Leg Pant with Pockets.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -847,7 +727,7 @@ const productData = [
     price: 36.99,
     stock: 18,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "06-Men's Jersey Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -857,7 +737,7 @@ const productData = [
     price: 32.99,
     stock: 6,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "07-Men's Sofspun Fleece Open Bottom Sweatpants.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -867,7 +747,7 @@ const productData = [
     price: 57.99,
     stock: 17,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "08-Men's Armour Fleece Pants.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -877,7 +757,7 @@ const productData = [
     price: 44.99,
     stock: 14,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "09-Men's Active Basic Jogger Fleece Pants.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -887,7 +767,7 @@ const productData = [
     price: 22.99,
     stock: 14,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "10-Men's Slim-Fit Casual Stretch Khaki.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -897,7 +777,7 @@ const productData = [
     price: 26.99,
     stock: 6,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "11-Men's Slim-fit Stretch Golf Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -907,7 +787,7 @@ const productData = [
     price: 31.99,
     stock: 3,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "12-Men's Slim-fit Wrinkle-Resistant Flat-Front Chino Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -917,7 +797,7 @@ const productData = [
     price: 29.99,
     stock: 8,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "13-Sport Men's X-Temp Performance Training Pant with Pockets.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -927,7 +807,7 @@ const productData = [
     price: 39.99,
     stock: 1,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "14-Men's Skinny-fit Casual Stretch Khaki Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -937,7 +817,7 @@ const productData = [
     price: 40.99,
     stock: 5,
     category_id: 3,
-    size: mensPantSize,
+    size: 'M',
     filename: "15-Men's Classic-fit Wrinkle-Resistant Flat-Front Chino Pant.jpg",
     parentFolder: "M-Pants",
     gender: "M"
@@ -952,7 +832,7 @@ const productData = [
     price: 11.99,
     stock: 15,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "01-Women's T Shirts V Neck Tops Shorts Sleeve Tops Casual Tshirts.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -962,7 +842,7 @@ const productData = [
     price: 8.99,
     stock: 44,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "02-Women's 2-Pack Slim-Fit Short-Sleeve Crewneck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -972,7 +852,7 @@ const productData = [
     price: 14.00,
     stock: 14,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "03-Women's Relaxed Supima Cotton Short Sleeve V-Neck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -982,7 +862,7 @@ const productData = [
     price: 13.50,
     stock: 14,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "04-Women's Easy Comfort V-Neck Supersoft Stretch Cotton T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -992,7 +872,7 @@ const productData = [
     price: 11.49,
     stock: 14,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "05-Women's Fashion Long Sleeve T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1002,7 +882,7 @@ const productData = [
     price: 17.99,
     stock: 4,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "06-Women's Graphic Funny T Shirt Cute Tops Teen Girl Tees.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1012,7 +892,7 @@ const productData = [
     price: 16.59,
     stock: 7,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "07-Women's Slim Fit Half Sleeve Square Neck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1022,7 +902,7 @@ const productData = [
     price: 9.00,
     stock: 17,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "08-Women's 3 Pack Dry Fit Athletic Compression Long Sleeve T Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1032,7 +912,7 @@ const productData = [
     price: 31.99,
     stock: 13,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "09-Women’s Perfect-T Short Sleeve T-shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1042,7 +922,7 @@ const productData = [
     price: 12.79,
     stock: 19,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "10-Womens Softstyle T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1052,7 +932,7 @@ const productData = [
     price: 11.99,
     stock: 1,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "11-Women Cute Funny Graphic T Shirts.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1062,7 +942,7 @@ const productData = [
     price: 14.55,
     stock: 20,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "12-Women's Tech Short-Sleeve T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1072,7 +952,7 @@ const productData = [
     price: 19.99,
     stock: 19,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "13-Women's Tech Twist T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1082,7 +962,7 @@ const productData = [
     price: 10.99,
     stock: 4,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "14-Womens T-Shirt Minnie Mouse Lean in Side Print.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1092,7 +972,7 @@ const productData = [
     price: 18.00,
     stock: 12,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "15-Women's Shirred V-Neck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1102,7 +982,7 @@ const productData = [
     price: 11.99,
     stock: 14,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "16-Women's X-Temp V-Neck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1112,7 +992,7 @@ const productData = [
     price: 17.99,
     stock: 16,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "17-Women's Classic Fit Twist Sleeve Crew Neck T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1122,7 +1002,7 @@ const productData = [
     price: 14.59,
     stock: 2,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "18-Women's Under Scrub Tee Crew Neck Long Sleeve T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1132,7 +1012,7 @@ const productData = [
     price: 20.99,
     stock: 6,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "19-Mickey Mouse Pocket T-Shirt.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1142,7 +1022,7 @@ const productData = [
     price: 19.99,
     stock: 8,
     category_id: 1,
-    size: 'S, M, L, XL, XXL',
+    size: 'XL',
     filename: "20-Women's Heavy Cotton T-Shirt, Style G5000L, 2-Pack.jpg",
     parentFolder: "W-Tops & T-Shirts",
     gender: "W"
@@ -1155,7 +1035,7 @@ const productData = [
     price: 10.99,
     stock: 14,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-Women's Parma 16 Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1165,7 +1045,7 @@ const productData = [
     price: 8.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Women's Play Up 3.0 Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W" 
@@ -1175,7 +1055,7 @@ const productData = [
     price: 15.99,
     stock: 22,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Women's Studio Terry Dolphin Short.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1185,7 +1065,7 @@ const productData = [
     price: 19.99,
     stock: 12,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Women's Mid Length Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1195,7 +1075,7 @@ const productData = [
     price: 16.99,
     stock: 7,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Women's Jersey Short.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1205,7 +1085,7 @@ const productData = [
     price: 12.50,
     stock: 19,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Women's French Terry Bermuda Short.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1215,7 +1095,7 @@ const productData = [
     price: 22.00,
     stock: 3,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Women's Mid Length Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1225,7 +1105,7 @@ const productData = [
     price: 16.99,
     stock: 16,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Women's Stretch Performance Short.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1235,7 +1115,7 @@ const productData = [
     price: 20.99,
     stock: 5,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Women's Play Up Short 3.0 - Twist.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1245,7 +1125,7 @@ const productData = [
     price: 18.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Women's Alphaskin Volleyball Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1255,7 +1135,7 @@ const productData = [
     price: 16.99,
     stock: 7,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Women's Cotton Jersey Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1265,7 +1145,7 @@ const productData = [
     price: 13.55,
     stock: 0,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Women's Dry 10K Running Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1275,7 +1155,7 @@ const productData = [
     price: 17.99,
     stock: 13,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Women's Regular Fit Utility Chino Walkshort.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1285,7 +1165,7 @@ const productData = [
     price: 15.99,
     stock: 1,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Women's Mesh Short.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1295,7 +1175,7 @@ const productData = [
     price: 19.99,
     stock: 16,
     category_id: 4,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Women's Plus Cotton Jersey Pull-On Shorts.jpg",
     parentFolder: "W-Shorts",
     gender: "W"
@@ -1308,7 +1188,7 @@ const productData = [
     price: 24.99,
     stock: 14,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-Women's EcoSmart Crewneck Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1318,7 +1198,7 @@ const productData = [
     price: 20.99,
     stock: 8,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Women's Powerblend Crew, Screen Print Script.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1328,7 +1208,7 @@ const productData = [
     price: 29.99,
     stock: 10,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Women's Benton Springs Half Snap Pullover.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1338,7 +1218,7 @@ const productData = [
     price: 33.99,
     stock: 4,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Women's Fleece Hooded Tunic Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1348,7 +1228,7 @@ const productData = [
     price: 44.99,
     stock: 22,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Women's EcoSmart Full-Zip Hoodie Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1358,7 +1238,7 @@ const productData = [
     price: 22.59,
     stock: 19,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Women's Fleece Pullover Hoodie.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1368,7 +1248,7 @@ const productData = [
     price: 29.79,
     stock: 21,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Women's Regular Clarksburg Pullover Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1378,7 +1258,7 @@ const productData = [
     price: 39.99,
     stock: 4,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Sport Women's Performance Fleece Pullover Hoodie.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1388,7 +1268,7 @@ const productData = [
     price: 26.56,
     stock: 6,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Women's Plus Size Fleece Pullover Hoodie.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1398,7 +1278,7 @@ const productData = [
     price: 40.99,
     stock: 1,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Active Women's Ultra Soft Quilted Cowl Neck Pullover Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1408,7 +1288,7 @@ const productData = [
     price: 37.99,
     stock: 9,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Women's Reverse Weave Crew.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1418,7 +1298,7 @@ const productData = [
     price: 24.99,
     stock: 25,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Women's Terry Cotton and Modal Tie Sleeve V-Neck Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1428,7 +1308,7 @@ const productData = [
     price: 28.75,
     stock: 11,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Women's Kiko Oversized Crew Neck Sweatshirt.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1438,7 +1318,7 @@ const productData = [
     price: 24.99,
     stock: 14,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Women's Sport Performance Fleece Quarter Zip Pullover.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1448,7 +1328,7 @@ const productData = [
     price: 28.99,
     stock: 17,
     category_id: 2,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Womens Team 19 Hoodie.jpg",
     parentFolder: "W-Sweatshirts & Hoodies",
     gender: "W"
@@ -1461,7 +1341,7 @@ const productData = [
     price: 44.99,
     stock: 14,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "01-Women's Heavenly Hooded Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1471,7 +1351,7 @@ const productData = [
     price: 34.99,
     stock: 1,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "02-Women's Arcadia Ii Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1481,7 +1361,7 @@ const productData = [
     price: 43.59,
     stock: 12,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "03-Women's Benton Springs Fleece Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1491,7 +1371,7 @@ const productData = [
     price: 40.79,
     stock: 17,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "04-Women's Polar Fleece Lined Sherpa Full-Zip Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1501,7 +1381,7 @@ const productData = [
     price: 38.99,
     stock: 18,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "05-Women's Lightweight Water-Resistant Packable Puffer Coat.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1511,7 +1391,7 @@ const productData = [
     price: 29.99,
     stock: 13,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "06-Women's Switchback Iii Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1521,7 +1401,7 @@ const productData = [
     price: 37.59,
     stock: 6,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "07-Women's Premium Original Trucker Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1531,7 +1411,7 @@ const productData = [
     price: 49.99,
     stock: 10,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "08-Women’s Osito Full Zip Fleece Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1541,7 +1421,7 @@ const productData = [
     price: 49.39,
     stock: 15,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "09-Women's Fire Side Ii Sherpa Full Zip.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1551,7 +1431,7 @@ const productData = [
     price: 30.00,
     stock: 17,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "10-Women's CirrusLite 2.0 Down Parka.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1561,7 +1441,7 @@ const productData = [
     price: 34.99,
     stock: 12,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "11-Women's Kruser Ridge Ii Softshell.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1571,7 +1451,7 @@ const productData = [
     price: 74.99,
     stock: 11,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "12-Women's Core Soft Shell Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1581,7 +1461,7 @@ const productData = [
     price: 46.99,
     stock: 13,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "13-Women's EcoSmart Full-Zip Hoodie Sweatshirt.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1591,7 +1471,7 @@ const productData = [
     price: 28.99,
     stock: 10,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "14-Women's Switchback Lined Long Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1601,7 +1481,7 @@ const productData = [
     price: 36.99,
     stock: 19,
     category_id: 5,
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: 'M',
     filename: "15-Women's Thickened Down Jacket.jpg",
     parentFolder: "W-Jackets & Vests",
     gender: "W"
@@ -1614,7 +1494,7 @@ const productData = [
     price: 44.99,
     stock: 14,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "01-Sport Women's Performance Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1624,7 +1504,7 @@ const productData = [
     price: 24.99,
     stock: 8,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "02-Women's Soft Jogger Pants Drawstring Pockets.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1634,7 +1514,7 @@ const productData = [
     price: 31.99,
     stock: 17,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "03-Women's Wrinkle Free Relaxed Fit Straight Leg Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1644,7 +1524,7 @@ const productData = [
     price: 27.95,
     stock: 7,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "04-Women's Marilyn Straight Denim Jeans.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1654,7 +1534,7 @@ const productData = [
     price: 26.55,
     stock: 12,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "05-All Around Elastic Waist Cotton Medium Twill Pants.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1664,7 +1544,7 @@ const productData = [
     price: 38.99,
     stock: 8,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "06-Women's Ease Into Comfort Straight Leg Pant with Tummy Control.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1674,7 +1554,7 @@ const productData = [
     price: 36.99,
     stock: 4,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "07-Women's French Terry Capri Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1684,7 +1564,7 @@ const productData = [
     price: 37.99,
     stock: 19,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "08-Women's French Terry Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1694,7 +1574,7 @@ const productData = [
     price: 29.99,
     stock: 15,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "09-Women's Harem Hippie Pants Boho Clothing.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1704,7 +1584,7 @@ const productData = [
     price: 40.99,
     stock: 4,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "10-Women's Relaxed Straight Stretch Twill Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1714,7 +1594,7 @@ const productData = [
     price: 35.99,
     stock: 6,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "11-Women's Flat Front Stretch Twill Pant Slim Fit Bootcut.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1724,7 +1604,7 @@ const productData = [
     price: 19.99,
     stock: 19,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "12-Women's Marilyn Straight Denim Jeans.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1734,7 +1614,7 @@ const productData = [
     price: 27.99,
     stock: 44,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "13-Women's EcoSmart Open Bottom Leg Sweatpants.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1744,7 +1624,7 @@ const productData = [
     price: 26.39,
     stock: 16,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "14-Women's Printed Solid Activewear Jogger Track Cuff Sweatpants.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1754,7 +1634,7 @@ const productData = [
     price: 39.95,
     stock: 16,
     category_id: 3,
-    size: womensPantSize,
+    size: 'L',
     filename: "15-Women’s Relaxed Fit All Day Straight Leg Pant.jpg",
     parentFolder: "W-Pants",
     gender: "W"
@@ -1766,7 +1646,7 @@ const productData = [
   //   price: 10.99,
   //   stock: 14,
   //   category_id: 4,
-  //   size: ["S", "M", "L", "XL", "XXL"],
+  //   size: 'M',
   //   filename: "",
   //   gender: "M"
   // },
@@ -1775,7 +1655,7 @@ const productData = [
   //   price: 44.99,
   //   stock: 14,
   //   category_id: 5,
-  //   size: ["S", "M", "L", "XL", "XXL"],
+  //   size: 'M',
   //   filename: "",
   //   gender: "M"
   // },
@@ -1795,7 +1675,7 @@ const productData = [
   //     price: 11.99,
   //     stock: 14,
   //     category_id: 1,
-  //     size: ["S", "M", "L", "XL", "XXL"],
+  //     size: 'M',
   //     filename: "",
   //     gender: "W"
   //   },
@@ -1804,7 +1684,7 @@ const productData = [
   //     price: 24.99,
   //     stock: 14,
   //     category_id: 2,
-  //     size: ["S", "M", "L", "XL", "XXL"],
+  //     size: 'M',
   //     filename: "",
   //     gender: "W"
   //   },
@@ -1813,7 +1693,7 @@ const productData = [
   //     price: 10.99,
   //     stock: 14,
   //     category_id: 4,
-  //     size: ["S", "M", "L", "XL", "XXL"],
+  //     size: 'M',
   //     filename: "",
   //     gender: "W"
   //   },
@@ -1822,7 +1702,7 @@ const productData = [
   //     price: 44.99,
   //     stock: 14,
   //     category_id: 5,
-  //     size: ["S", "M", "L", "XL", "XXL"],
+  //     size: 'M',
   //     filename: "",
   //     gender: "W"
   //   },
