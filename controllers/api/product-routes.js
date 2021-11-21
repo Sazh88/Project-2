@@ -18,15 +18,17 @@ router.get('/', (req, res) => {
   })
     .then(data => {
       // console.log('zz', data.dataValues)
-      const dbProductData = data.get({ plain: true })
-      res.render('homepage', { dbProductData })
+
+      const dbProductData = data.map((product) => product.get({ plain: true }));
+      res.render('homepage', { dbProductData });
+
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-
+// get /:gender
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
