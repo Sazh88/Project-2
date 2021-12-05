@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
       // console.log('zz', data.dataValues)
 
       const dbProductData = data.map((product) => product.get({ plain: true }));
-      res.render('homepage', { dbProductData });
+      res.render('products', { dbProductData });
 
     })
     .catch(err => {
@@ -106,5 +106,40 @@ router.delete('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
+
+router.get("/:gender", (req, res) => {
+  Product.findAll({
+    where: {
+      gender: req.params.gender,
+    },
+    attributes: [
+      "id",
+      "product_name",
+      "price",
+      "stock",
+      "category_id",
+      "size",
+      "filename",
+      "parentFolder",
+      "gender",
+    ],
+    include: [
+      {
+        model: Category,
+        attributes: ["category_name"],
+      },
+    ],
+  })
+    .then((data) => {
+      console.log("zz", data.dataValues);
+      const dbProductData = data.map((product) => product.get({ plain: true }));
+      res.render("homepage", { dbProductData });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 
 module.exports = router;
