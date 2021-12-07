@@ -91,6 +91,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.columContainer {
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color:antiquewhite;
+}
+
+  .modal-content {
+display: flex;
+
+  }
+
 
 .product {
   width: 50%;
