@@ -7,61 +7,64 @@
     {{> product-details}}
     {{/each}}
   </section> --}}
-  hi
+
 </section>
 
+{{#each dbProductData as |product|}}
+  <div class="card container">
+    <img src={{format_source product.parentFolder product.filename}} />
 
+    <p>{{product.product_name}}</p>
 
+    <p>${{product.price}}</p>
 
-{{#each dbProductData as |product| }}
-<div class="card container">
-  <div class="card">
-    <h2>{{product.product_name}}</h2>
-  </div>
-  <div class="card">
-    <h2>{{product.price}}</h2>
-  </div>
-   <div class="card">
-    <h2>{{product.stock}}</h2>
-  </div>
-   <div class="card">
-    <h2>{{product.category_id}}</h2>
-  </div>
-   <div class="card">
-    <h2>{{product.size}}</h2>
-  </div>
-   <div class="card">
-    <img src={{format_source product.parentFolder product.filename}}>
+    <p>Quantity - {{product.stock}}</p>
+
+    {{!-- <p>{{product.category_id}}</p> --}}
+
+    <p>Size - {{product.size}}</p>
+
+    {{!-- <p>{{product.parentFolder}}</p> --}}
+
+    <p>{{product.gender}}</p>
+
+    {{!-- <button>Add to cart</button> --}}
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="G5D3MTZH5J5TS">
+    <table>
+    <tr><td><input type="hidden" name="on0" value=""Prices""></td></tr><tr><td><select name="os0">
+        <option value="Option 1">Option 1 $22.00 </option>
+        <option value="Option 2">Option 2 $14.00 USD</option>
+        <option value="Option 3">Option 3 $17.95 USD</option>
+        <option value="Option 4">Option 4 $12.44 USD</option>
+        <option value="Option 5">Option 5 $27.88 USD</option>
+        <option value="Option 6">Option 6 $18.40 USD</option>
+        <option value="Option 7">Option 7 $15.99 USD</option>
+        <option value="Option 8">Option 8 $13.95 USD</option>
+        <option value="Option 9">Option 9 $11.95 USD</option>
+        <option value="Option 10">Option 10 $9.95 USD</option>
+    </select></td></tr>
+    </table>
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+    </form>
+    
 
   </div>
-   <div class="card">
-    <h2>{{product.parentFolder}}</h2>
-  </div>
-   <div class="card">
-    <h2>{{product.gender}}</h2>
-  </div>
-
-</div>
 {{/each}}
+
+
 
 {{!-- {{#each products as |product|}}
 {{> product-details}}
 {{/each}} --}}
 
-
-
-
-
-
-
-
-
-
-
-
-
 {{!-- <div class="text-center">
-  <h2>{{name}}</h2>
+  <p>{{name}}</p>
   <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
