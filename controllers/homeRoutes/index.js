@@ -20,7 +20,15 @@ router.get('/', async (req, res) => {
 //   }
 // });
 
+//GET Checkout
+router.get('/checkout', (req, res) => {
+  // if (req.session.loggedIn) {
+  //   res.redirect('/');
+  //   return;
+  // }
 
+  res.render('checkout');
+});
 //GET About
 router.get('/about', (req, res) => {
   // if (req.session.loggedIn) {
