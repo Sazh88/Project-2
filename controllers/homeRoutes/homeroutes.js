@@ -49,8 +49,17 @@ router.get('/blog', (req, res) => {
   res.render('blog');
 });
 
+//GET Checkout
+router.get('/checkout', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
 
-  
+  res.render('checkout');
+});
+
+
 
 
 module.exports = router;
